@@ -1,0 +1,13 @@
+<view class="page-container" bindtap="handleStart">
+  <view class="content-center">
+    <text class="title-text">双屿</text>
+    <image class="logo-image" src="cloud://cloud1-2gjorcmtb6d39705.636c-cloud1-2gjorcmtb6d39705-1412250281/images/shuangyu-logo.png" mode="widthFix"></image>
+    <text class="subtitle-text">一款基于双耳节拍的正念应用</text>
+  </view>
+  <view class="bottom-hint">
+    <view class="footer-container">
+      <text class="earphone-tip">建议佩戴耳机以获得最佳效果</text>
+      <text class="hint-text">点击任意位置开始</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<view class="page">
+  <image class="bg-image" src="{{bgSrc}}" mode="aspectFill"></image>
+  <!-- 返回按钮 -->
+  <view class="nav-bar" style="padding-top:{{navBarTop}}px;">
+    <view class="back-btn" hover-class="btn-active" bindtap="goBack">
+      <text class="back-icon">＜</text>
+      <text class="back-text">返回</text>
+    </view>
+  </view>
+
+  <!-- 浮动岛屿 -->
+  <image src="cloud://cloud1-2gjorcmtb6d39705.636c-cloud1-2gjorcmtb6d39705-1412250281/images/X.jpg" mode="widthFix" class="floating-img"></image>
+
+  <!-- 音量控制区 -->
+  <view class="control-panel">
+    <view class="slider-row">
+      <text class="slider-label">背景音乐音量</text>
+      <view class="slider-wrap">
+        <slider class="vol-slider" min="0" max="100" value="{{bgmVolume}}" activeColor="rgba(255,255,255,0.9)" backgroundColor="rgba(255,255,255,0.25)" block-size="20" bindchange="onBgmVolumeChange"></slider>
+      </view>
+    </view>
+    <view class="slider-row">
+      <text class="slider-label">波形能量音量</text>
+      <view class="slider-wrap">
+        <slider class="vol-slider" min="0" max="100" value="{{waveVolume}}" activeColor="rgba(255,255,255,0.9)" backgroundColor="rgba(255,255,255,0.25)" block-size="20" bindchange="onWaveVolumeChange"></slider>
+      </view>
+    </view>
+  </view>
+
+  <!-- 点赞按钮区 -->
+  <view class="like-bar">
+    <button class="like-btn {{bgLiked ? 'liked' : ''}}" bindtap="handleLikeBg" hover-class="btn-press" plain="{{true}}">
+      <text class="like-icon" style="color: {{bgLiked ? '#ff4d4f' : '#333333'}}; font-size: 40rpx;">{{bgLiked ? '❤' : '♡'}}</text>
+      <text class="like-label">喜欢背景</text>
+    </button>
+    <button class="like-btn {{bgmLiked ? 'liked' : ''}}" bindtap="handleLikeBgm" hover-class="btn-press" plain="{{true}}">
+      <text class="like-icon" style="color: {{bgmLiked ? '#ff4d4f' : '#333333'}}; font-size: 40rpx;">{{bgmLiked ? '❤' : '♡'}}</text>
+      <text class="like-label">喜欢音乐</text>
+    </button>
+  </view>
+
+  <!-- 播放/暂停按钮 -->
+  <view class="play-btn-wrapper">
+    <view class="{{isPlaying ? 'play-btn pause-btn' : 'play-btn'}}" hover-class="btn-press" bindtap="togglePlay">
+      <text class="play-icon">{{isPlaying ? '⏸' : '▶'}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<view class="page">
+  <!-- 返回按钮 -->
+  <view class="nav-bar" style="padding-top:{{navBarTop}}px;">
+    <view class="back-btn" hover-class="btn-active" bindtap="goBack">
+      <text class="back-icon">＜</text>
+      <text class="back-text">返回</text>
+    </view>
+  </view>
+
+  <!-- 场景选项列表 -->
+  <view class="list">
+    <view class="subject-card" hover-class="card-active" bindtap="goPlayer" data-title="数学、物理">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img"></image>
+      <text class="card-text">数学、物理</text>
+    </view>
+
+    <view class="subject-card card-gap" hover-class="card-active" bindtap="goPlayer" data-title="化学、生物">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img card-img-blue"></image>
+      <text class="card-text">化学、生物</text>
+    </view>
+
+    <view class="subject-card card-gap" hover-class="card-active" bindtap="goPlayer" data-title="语文、英语">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img card-img-green"></image>
+      <text class="card-text">语文、英语</text>
+    </view>
+
+    <view class="subject-card card-gap" hover-class="card-active" bindtap="goPlayer" data-title="历史、地理、政治">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img card-img-orange"></image>
+      <text class="card-text">历史、地理、政治</text>
+    </view>
+  </view>
+  <view class="bottom-mask"></view>
+</view>

@@ -1,0 +1,22 @@
+<view class="page">
+  <!-- 返回按钮 -->
+  <view class="nav-bar" style="padding-top:{{navBarTop}}px;">
+    <view class="back-btn" hover-class="btn-active" bindtap="goBack">
+      <text class="back-icon">＜</text>
+      <text class="back-text">返回</text>
+    </view>
+  </view>
+
+  <!-- 场景选项列表 -->
+  <view class="list">
+    <view class="subject-card" hover-class="card-active" bindtap="goPlayer" data-title="缓解焦虑">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img card-img-anxiety"></image>
+      <text class="card-text">缓解焦虑</text>
+    </view>
+
+    <view class="subject-card" hover-class="card-active" bindtap="goPlayer" data-title="缓解疼痛">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img card-img-pain"></image>
+      <text class="card-text">缓解疼痛</text>
+    </view>
+  </view>
+</view>

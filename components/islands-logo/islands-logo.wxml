@@ -1,0 +1,8 @@
+<!-- 双屿矢量徽标组件 - 极简现代扁平风 -->
+<view class="logo-wrapper">
+  <image
+    class="svg-logo"
+    src="/assets/islands-logo.svg"
+    mode="aspectFit"
+  ></image>
+</view>

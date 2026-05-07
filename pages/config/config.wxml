@@ -1,0 +1,71 @@
+<view class="page">
+  <!-- 返回按钮 -->
+  <view class="nav-bar" style="padding-top:{{navBarTop}}px;">
+    <view class="back-btn" hover-class="btn-active" bindtap="goBack">
+      <text class="back-icon">＜</text>
+      <text class="back-text">返回</text>
+    </view>
+  </view>
+
+  <!-- 推荐框 -->
+  <view class="recommend-box">
+    <text class="recommend-title">今日大家都在用的图片和音乐是：</text>
+    <view class="recommend-tags">
+      <view class="tag hover-active" bindtap="selectRecommendBg">
+        <text class="tag-text">{{recommendBg || '暂无数据'}}</text>
+      </view>
+      <view class="tag hover-active" bindtap="selectRecommendBgm">
+        <text class="tag-text">{{recommendBgm || '暂无数据'}}</text>
+      </view>
+    </view>
+    <!-- 调试信息（确认后可删除） -->
+    <text style="color:rgba(255,255,255,0.4); font-size:22rpx; margin-top:12rpx;">{{debugInfo}}</text>
+  </view>
+
+  <!-- 配置区 -->
+  <view class="config-section">
+    <!-- 背景选择 -->
+    <view class="config-row tap-area" data-type="bg" bindtap="openPicker">
+      <text class="config-label">背景选择</text>
+      <view class="picker-value">
+        <text>{{imageList[selectedBgIndex].name}}</text>
+        <text class="picker-arrow">▾</text>
+      </view>
+    </view>
+
+    <!-- 音乐选择 -->
+    <view class="config-row tap-area" data-type="bgm" bindtap="openPicker">
+      <text class="config-label">音乐选择</text>
+      <view class="picker-value">
+        <text>{{bgmList[selectedBgmIndex].name}}</text>
+        <text class="picker-arrow">▾</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 开始按钮 -->
+  <view class="start-wrapper">
+    <button class="start-btn hover-press" bindtap="goPlayer">开始</button>
+  </view>
+
+  <!-- 自定义选择器弹窗 -->
+  <view class="picker-mask {{showPicker ? 'show' : ''}}" bindtap="closePicker"></view>
+  <view class="picker-popup {{showPicker ? 'show' : ''}}">
+    <view class="picker-header">
+      <text class="picker-title">{{pickerTitle}}</text>
+      <text class="picker-close" bindtap="closePicker">完成</text>
+    </view>
+    <scroll-view class="picker-list" scroll-y enhanced show-scrollbar="{{false}}">
+      <view
+        wx:for="{{pickerOptions}}"
+        wx:key="value"
+        class="picker-option {{pickerCurrentIndex === index ? 'active' : ''}}"
+        data-index="{{index}}"
+        bindtap="selectItem"
+      >
+        <text class="option-name">{{item.name}}</text>
+        <text class="option-check" wx:if="{{pickerCurrentIndex === index}}">✓</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

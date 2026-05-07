@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="header">选择一个岛屿以开始</view>
+  <view class="list">
+    <view class="card" hover-class="card-active" bindtap="goStudy">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img"></image>      <text class="card-text">学习</text>
+    </view>
+    <view class="card card-gap" hover-class="card-active" bindtap="goRelax">
+      <image src="/static/daoyu.jpg" mode="widthFix" class="card-img card-img-blue"></image>
+      <text class="card-text">放松</text>
+    </view>
+  </view>
+</view>

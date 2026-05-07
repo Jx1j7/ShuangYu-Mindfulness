@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" fill="none">
+  <defs>
+    <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7DD3D8"/>
+      <stop offset="100%" stop-color="#4BB8C5"/>
+    </linearGradient>
+    <linearGradient id="reflectionFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5EC8CF" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#5EC8CF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#5EC8CF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== 左岛 ==================== -->
+  <g transform="translate(6, 0)">
+
+    <!-- 左岛水面倒影 -->
+    <g opacity="0.38">
+      <path d="M40 148 L75 172 L110 158 L130 180 L105 210 L65 222 L35 198 Z" fill="#3A9EA8"/>
+      <path d="M40 148 L65 178 L85 160 L105 185 L90 208 L60 215 L38 192 Z" fill="#4BAFB7"/>
+      <path d="M65 178 L95 195 L80 212 L55 200 Z" fill="#5BC0C9"/>
+      <ellipse cx="78" cy="218" rx="42" ry="4" fill="#fff" opacity="0.25"/>
+      <line x1="45" y1="206" x2="108" y2="204" stroke="#fff" stroke-width="1.2" opacity="0.18" stroke-linecap="round"/>
+      <line x1="58" y1="216" x2="98" y2="215" stroke="#fff" stroke-width="0.8" opacity="0.12" stroke-linecap="round"/>
+    </g>
+
+    <!-- 左岛基座环 -->
+    <ellipse cx="82" cy="146" rx="64" ry="10" fill="#E5F4F6"/>
+
+    <!-- 山体层1 - 最底层 浅黄绿 -->
+    <path d="M22 144 L48 126 L82 134 L118 124 L146 142 L114 146 L82 148 L46 146Z" fill="#B8D996"/>
+
+    <!-- 山体层2 - 浅绿 -->
+    <path d="M32 132 L52 108 L82 118 L112 106 L136 128 L112 132 L82 135 L50 131Z" fill="#8FBE79"/>
+
+    <!-- 山体层3 - 绿色 -->
+    <path d="M42 116 L60 86 L82 98 L104 84 L124 110 L102 115 L82 118 L62 113Z" fill="#6AAA68"/>
+
+    <!-- 山体层4 - 深绿左 -->
+    <path d="M50 98 L66 64 L82 78 L96 62 L82 98 L62 105Z" fill="#4A9360"/>
+
+    <!-- 山体层4b - 深绿右 -->
+    <path d="M82 78 L96 62 L114 92 L102 105Z" fill="#3D8458"/>
+
+    <!-- 山体层5 - 更深绿左峰 -->
+    <path d="M58 76 L72 44 L82 60 L82 78 L66 64Z" fill="#3A7A56"/>
+
+    <!-- 山体层5b - 更深绿右峰 -->
+    <path d="M82 60 L94 38 L106 66 L96 62Z" fill="#34704E"/>
+
+    <!-- 雪顶底层 -->
+    <path d="M66 64 L74 42 L82 54 L88 36 L96 62 L82 78Z" fill="#F0F6F8"/>
+
+    <!-- 雪顶高光 -->
+    <path d="M71 50 L78 44 L82 52 L88 42 L93 55 L82 66Z" fill="#FFFFFF"/>
+
+  </g>
+
+  <!-- ==================== 右岛（同左岛，平移） ==================== -->
+  <g transform="translate(152, 0)">
+
+    <!-- 右岛水面倒影 -->
+    <g opacity="0.38">
+      <path d="M40 148 L75 172 L110 158 L130 180 L105 210 L65 222 L35 198 Z" fill="#3A9EA8"/>
+      <path d="M40 148 L65 178 L85 160 L105 185 L90 208 L60 215 L38 192 Z" fill="#4BAFB7"/>
+      <path d="M65 178 L95 195 L80 212 L55 200 Z" fill="#5BC0C9"/>
+      <ellipse cx="78" cy="218" rx="42" ry="4" fill="#fff" opacity="0.25"/>
+      <line x1="45" y1="206" x2="108" y2="204" stroke="#fff" stroke-width="1.2" opacity="0.18" stroke-linecap="round"/>
+      <line x1="58" y1="216" x2="98" y2="215" stroke="#fff" stroke-width="0.8" opacity="0.12" stroke-linecap="round"/>
+    </g>
+
+    <!-- 右岛基座环 -->
+    <ellipse cx="82" cy="146" rx="64" ry="10" fill="#E5F4F6"/>
+
+    <!-- 山体层1 -->
+    <path d="M22 144 L48 126 L82 134 L118 124 L146 142 L114 146 L82 148 L46 146Z" fill="#B8D996"/>
+
+    <!-- 山体层2 -->
+    <path d="M32 132 L52 108 L82 118 L112 106 L136 128 L112 132 L82 135 L50 131Z" fill="#8FBE79"/>
+
+    <!-- 山体层3 -->
+    <path d="M42 116 L60 86 L82 98 L104 84 L124 110 L102 115 L82 118 L62 113Z" fill="#6AAA68"/>
+
+    <!-- 山体层4左 -->
+    <path d="M50 98 L66 64 L82 78 L96 62 L82 98 L62 105Z" fill="#4A9360"/>
+
+    <!-- 山体层4右 -->
+    <path d="M82 78 L96 62 L114 92 L102 105Z" fill="#3D8458"/>
+
+    <!-- 山体层5左 -->
+    <path d="M58 76 L72 44 L82 60 L82 78 L66 64Z" fill="#3A7A56"/>
+
+    <!-- 山体层5右 -->
+    <path d="M82 60 L94 38 L106 66 L96 62Z" fill="#34704E"/>
+
+    <!-- 雪顶底层 -->
+    <path d="M66 64 L74 42 L82 54 L88 36 L96 62 L82 78Z" fill="#F0F6F8"/>
+
+    <!-- 雪顶高光 -->
+    <path d="M71 50 L78 44 L82 52 L88 42 L93 55 L82 66Z" fill="#FFFFFF"/>
+
+  </g>
+</svg>

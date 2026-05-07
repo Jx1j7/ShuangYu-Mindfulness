@@ -1,0 +1,11 @@
+/* islands-logo 组件样式 */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-logo {
+  width: 280rpx;
+  height: 240rpx;
+}
